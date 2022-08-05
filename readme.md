@@ -2,6 +2,14 @@ This must stop:
 ---------------
 ![Nevar again](https://i.makeagif.com/media/8-22-2014/GO_DT4.gif)
 
+TODO List
+[x] form in html
+[x] array
+[x] POST client side, put in an object
+[x] POST server side
+[] GET client, send to the DOM
+[] GET server
+
 
 Koala Holla
 ===========
