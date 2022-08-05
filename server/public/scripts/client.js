@@ -16,11 +16,7 @@ function setupClickListeners() {
     // NOT WORKING YET :(
     // using a test object
     let koalaToSend = {
-      name: 'testName',
-      age: 'testName',
-      gender: 'testName',
-      readyForTransfer: 'testName',
-      notes: 'testName',
+
     };
     // call saveKoala with the new obejct
     saveKoala( koalaToSend );
@@ -29,12 +25,6 @@ function setupClickListeners() {
 
 function getKoalas(){
   console.log( 'in getKoalas' );
-  // ajax call to server to get koalas
-  
-} // end getKoalas
-
-function saveKoala( newKoala ){
-  console.log( 'in saveKoala', newKoala );
   $.ajax({
     type: 'GET',
     url: '/koalas'
@@ -55,6 +45,11 @@ function saveKoala( newKoala ){
     console.log('error');
     alert('Something Is Wrong');
   })
+  
+} // end getKoalas
+
+function saveKoala( newKoala ){
+  console.log( 'in saveKoala', newKoala );
 } // end saveKoala
 
 function sendKoalaToServer () {
